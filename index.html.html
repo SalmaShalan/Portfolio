@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salma Shalan | Operations & AI Automation</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2ff;--card:#fff;--ink:#102a43;--mute:#52667a;--teal:#3454d1;--coral:#3454d1;--navy:#16246b;--line:#dde4fa;--tealsoft:#e4eaff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1623;--card:#13263a;--ink:#eaf2f7;--mute:#9db2c3;--line:#223b52;--tealsoft:#15305e}}
+:root[data-theme="dark"]{--bg:#0b1623;--card:#13263a;--ink:#eaf2f7;--mute:#9db2c3;--line:#223b52;--tealsoft:#15305e}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg) linear-gradient(180deg,rgba(124,150,240,.22),rgba(255,255,255,0) 520px) no-repeat;color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 5vw;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:8px}
+.logo b{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--teal);color:#fff;font-size:.95rem}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:7px 14px;border-radius:99px;font-weight:500;font-size:.92rem;color:var(--mute)}
+nav a.on{color:var(--teal);background:var(--tealsoft);font-weight:700}
+.btn{display:inline-block;padding:12px 24px;border-radius:99px;font-weight:700;background:var(--coral);color:#fff;border:0;cursor:pointer;font:inherit;font-weight:700}
+.btn.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+main{width:100%;max-width:none;margin:0;padding:40px 4vw 70px}html,body{overflow-x:hidden}
+.page{display:none}.page.on{display:block}
+h1{font-size:clamp(2.2rem,5.5vw,3.8rem);line-height:1.1;margin:.3em 0;font-weight:800}
+h1 em{font-style:normal;color:var(--coral)}
+h2{font-size:1.9rem;margin:0 0 6px;font-weight:800}
+.sub{color:var(--mute);max-width:60ch;margin:0 0 28px}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;min-height:62vh}
+.tag{display:inline-block;background:var(--tealsoft);color:var(--teal);font-weight:700;font-size:.85rem;padding:5px 14px;border-radius:99px}
+.mono{aspect-ratio:1;max-width:360px;margin:auto;width:100%;border-radius:50% 44% 50% 40%;background:linear-gradient(140deg,var(--teal),#7c96f0);display:grid;place-items:center;color:#fff;font-size:6rem;font-weight:800;position:relative}
+.mono::after{content:"";position:absolute;right:-6%;bottom:8%;width:34%;aspect-ratio:1;border-radius:50%;background:#c3d1ff;z-index:-1}
+.stats{display:flex;gap:22px 28px;margin:28px 0;flex-wrap:wrap}
+.stats div{padding-right:28px;border-right:1px solid var(--line)}.stats div:last-child{border:0}
+.stats b{display:block;font-size:1.8rem;color:var(--teal)}.stats span{color:var(--mute);font-size:.88rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(52,84,209,.08)}
+.card h3{margin:10px 0 6px;font-size:1.05rem}.card p{margin:0;color:var(--mute);font-size:.93rem}
+.ic{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.25rem;background:var(--tealsoft)}
+.card:nth-child(even) .ic{background:#d4defd}
+.band{background:var(--navy);color:#fff;border-radius:22px;padding:34px;margin-top:44px}
+.band h2{color:#fff}.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;margin-top:18px}
+.steps div{background:rgba(255,255,255,.08);border-radius:14px;padding:16px;font-size:.92rem}.steps b{color:#aebfff;display:block;margin-bottom:4px}
+.tl{border-left:3px solid var(--teal);margin-left:8px;padding-left:26px}
+.job{position:relative;margin-bottom:22px}.job::before{content:"";position:absolute;left:-36px;top:24px;width:15px;height:15px;border-radius:50%;background:var(--coral);border:3px solid var(--bg)}
+.job .meta{color:var(--teal);font-weight:700;font-size:.88rem}.job ul{margin:10px 0 0;padding-left:18px;color:var(--mute);font-size:.94rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chips span{background:var(--tealsoft);color:var(--teal);padding:5px 13px;border-radius:99px;font-size:.84rem;font-weight:700}
+.cert{display:flex;flex-direction:column;gap:6px}.cert small{color:var(--mute)}.cert a{color:var(--teal);font-weight:700;font-size:.9rem}
+.cert .g{align-self:flex-start;background:#e4eaff;color:#2a3fa8;border-radius:99px;padding:2px 11px;font-size:.8rem;font-weight:700}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.tabs button{padding:8px 18px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
+.tabs button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.cta{background:linear-gradient(120deg,#2a3fa8,#3454d1 55%,#7c96f0);color:#fff;border-radius:22px;padding:36px;margin-top:40px}
+.cta h2{color:#fff}.cta .btn{background:var(--navy)}
+.clist a,.clist p{display:block;margin:6px 0}
+footer{text-align:center;color:var(--mute);font-size:.85rem;padding:24px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.mono{max-width:220px;font-size:4rem;order:-1}}
+@media(prefers-reduced-motion:no-preference){.page.on{animation:in .35s ease}@keyframes in{from{opacity:0;transform:translateY(8px)}}}
+.mono{background:none;border-radius:0;aspect-ratio:1;display:block;font-size:0;max-width:420px}.mono::after{display:none}.mono svg{width:100%;height:100%;display:block}@media(max-width:760px){.mono{max-width:260px}}
+.hl{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:8px}.hl li{position:relative;padding-left:26px}.hl li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;border-radius:50%;background:var(--teal)}.hl b{font-weight:800}.hl i{color:var(--mute)}
+.tagline{max-width:none}@media(min-width:700px){.tagline{white-space:nowrap;font-size:clamp(.8rem,1.55vw,1rem)}}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.ctatext{flex:1 1 280px}.ctaimg{flex:0 1 230px;width:230px;max-width:100%}.ctaimg svg{width:100%;height:auto;display:block}
+</style></head><body>
+<header><a class="logo" href="#home"><b>S</b>Salma Shalan</a>
+<nav id="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+
+<section class="page" id="home">
+<div class="hero"><div>
+<span class="tag">Operations Manager &amp; AI Automation</span>
+<h1>Driving Operational Excellence at Scale, <em>Powered by Data, Automation &amp; AI</em></h1>
+<p class="sub">I transform complex operations into scalable systems through process optimization, data analytics, automation, and AI.</p>
+<a class="btn" href="#experience">View My Work</a> <a class="btn ghost" href="#contact">Get in Touch</a>
+<div class="stats"><div><b>6+</b><span>Years in operations</span></div><div><b>17</b><span>Certifications</span></div><div><b>US, UK &amp; Middle East</b><span>Clients Supported</span></div></div>
+</div><div class="mono"><svg viewBox="0 0 400 400" role="img" aria-label="Operations dashboard illustration" xmlns="http://www.w3.org/2000/svg">
+<path d="M70 120C70 60 140 30 210 40s130 50 130 130-40 170-140 185S60 300 70 120Z" fill="#e4eaff"/>
+<circle cx="330" cy="310" r="46" fill="#c3d1ff"/>
+<rect x="55" y="85" width="270" height="200" rx="22" fill="#fff" stroke="#d9e3f5" stroke-width="2"/>
+<circle cx="80" cy="108" r="6" fill="#7c96f0"/><circle cx="98" cy="108" r="6" fill="#aebfff"/><circle cx="116" cy="108" r="6" fill="#d4defd"/>
+<rect x="75" y="135" width="110" height="130" rx="12" fill="#f2f6ff"/>
+<rect x="90" y="215" width="16" height="35" rx="4" fill="#aebfff"/><rect x="114" y="190" width="16" height="60" rx="4" fill="#7c96f0"/><rect x="138" y="165" width="16" height="85" rx="4" fill="#3454d1"/><rect x="162" y="150" width="14" height="100" rx="4" fill="#16246b"/>
+<rect x="200" y="135" width="105" height="60" rx="12" fill="#f2f6ff"/>
+<polyline points="212,180 235,165 255,172 280,148 296,152" fill="none" stroke="#3454d1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="296" cy="152" r="5" fill="#3454d1"/>
+<circle cx="236" cy="236" r="28" fill="none" stroke="#d4defd" stroke-width="12"/>
+<circle cx="236" cy="236" r="28" fill="none" stroke="#3454d1" stroke-width="12" stroke-dasharray="125 176" stroke-linecap="round" transform="rotate(-90 236 236)"/>
+<rect x="278" y="215" width="30" height="8" rx="4" fill="#7c96f0"/><rect x="278" y="232" width="24" height="8" rx="4" fill="#d4defd"/><rect x="278" y="249" width="30" height="8" rx="4" fill="#aebfff"/>
+<g transform="translate(300 80)"><circle r="38" fill="#16246b"/><circle r="14" fill="#fff"/><g fill="#16246b"><rect x="-4" y="-27" width="8" height="12" rx="2"/><rect x="-4" y="15" width="8" height="12" rx="2"/><rect x="-27" y="-4" width="12" height="8" rx="2"/><rect x="15" y="-4" width="12" height="8" rx="2"/></g><circle r="14" fill="none" stroke="#16246b" stroke-width="6"/></g>
+<g transform="translate(75 300)"><rect width="150" height="54" rx="16" fill="#3454d1"/><circle cx="28" cy="27" r="14" fill="#fff"/><path d="M21 27l5 5 9-10" fill="none" stroke="#3454d1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="52" y="18" width="80" height="8" rx="4" fill="#fff"/><rect x="52" y="33" width="52" height="8" rx="4" fill="#aebfff"/></g>
+</svg></div></div>
+<h2>What I Do</h2><p class="sub">Four areas where I deliver the most value.</p>
+<div class="grid">
+<div class="card"><div class="ic">⚙️</div><h3>Operations Management</h3><p>End-to-end control from manufacturing to delivery, with clear KPIs.</p></div>
+<div class="card"><div class="ic">📊</div><h3>Data Analysis</h3><p>Dashboards and reports that leadership can act on.</p></div>
+<div class="card"><div class="ic">🤖</div><h3>AI Automation</h3><p>Workflows built with Make, Copilot Studio and Microsoft 365.</p></div>
+<div class="card"><div class="ic">🗂️</div><h3>Project Management</h3><p>Scope, budget, schedule and risk kept on track.</p></div></div>
+<div class="band"><h2>How I Work</h2><div class="steps"><div><b>Discover</b>Interview stakeholders and map the real process.</div><div><b>Define</b>Set objectives, deliverables and timelines.</div><div><b>Improve</b>Remove bottlenecks with Lean and automation.</div><div><b>Deliver</b>Track results and report clearly.</div></div></div>
+</section>
+
+<section class="page" id="about">
+<h2>About Me</h2><p class="sub tagline">Operations &amp; Project Management Professional | Process Optimization | AI Automation | Data Analytics</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="card"><h3>My story</h3><p>I'm an operations manager with over six years of experience optimizing supply chains and using AI-driven data analysis to deliver actionable recommendations. I move comfortably between strategy and execution: from redesigning production lines to building dashboards and automations that keep teams aligned.</p></div>
+<div class="card"><h3>Education</h3><p><b>M.Eng. Machine Learning</b>, minor in Forecasting Techniques, Zagazig University (2020 to present)<br><br><b>B.Eng. Industrial Engineering</b>, minor in Supply Chain Management, Zagazig University (2015 to 2020)</p></div></div>
+<div class="card" style="margin-top:18px"><h3>Tools I use</h3><div class="chips"><span>Power BI</span><span>Python</span><span>SQL</span><span>Make</span><span>Copilot Studio</span><span>Microsoft 365</span><span>Google Workspace</span><span>Bitrix24</span><span>Trello</span><span>ClickUp</span></div>
+<h3 style="margin-top:18px">Core skills</h3><div class="chips"><span>Supply Chain</span><span>Lean Six Sigma</span><span>Purchasing</span><span>Risk &amp; Budget Control</span><span>Stakeholder Communication</span><span>Bilingual: Arabic &amp; English</span></div></div>
+</section>
+
+<section class="page" id="experience">
+<h2>Experience</h2><p class="sub">Where I've delivered results.</p>
+<div class="tl">
+<div class="card job"><span class="meta">Jun 2026 – Present · Micro1 Company, Remote, Egypt</span><h3>Business Operations Specialist</h3><ul><li>Optimized operational workflows and business processes, improving efficiency and supporting data-driven decision-making across teams.</li><li>Leveraged AI tools and automation solutions to streamline repetitive tasks, enhance productivity, and reduce manual effort.</li><li>Coordinated cross-functional initiatives to improve communication, execution, and overall operational performance.</li><li>Supported AI model training and data quality initiatives by delivering accurate data annotation, validation, and continuous process improvements for machine learning systems.</li></ul></div>
+<div class="card job"><span class="meta">Jan 2025 – Present · MAESTRO BII Company, Remote, Egypt</span><h3>Project Manager</h3><ul><li>Led cross-functional projects and marketing operations, overseeing planning, execution, stakeholder alignment, and performance tracking to ensure successful delivery.</li><li>Analyzed and optimized business processes, developed SOPs, and delivered training programs to drive operational excellence and standardize workflows.</li><li>Designed and implemented automation solutions and system controls using AI-powered tools, reducing manual effort and improving efficiency, accuracy, and scalability.</li><li>Produced executive reports, MOMs, proposals, quotations, and strategic reviews while translating data and insights into actionable business decisions.</li></ul></div>
+<div class="card job"><span class="meta">Jan 2023 – Dec 2024 · YouMats Company, Remote, Saudi Arabia</span><h3>Operations Manager</h3><ul><li>Led end-to-end supply chain and operations improvement initiatives across Customer Service, Sales, E-commerce, Forecasting, Manufacturing, Logistics, and Procurement functions, enhancing cross-functional alignment and operational efficiency.</li><li>Optimized recruitment processes from job posting and candidate sourcing to screening, interviewing, and evaluation, supporting the acquisition of high-quality talent aligned with business needs.</li><li>Partnered with web development and business teams to analyze customer journeys, identify drop-off points, and implement process improvements that enhance customer experience and conversion performance.</li><li>Driven continuous improvement initiatives through process analysis, workflow redesign, SOP development, team training, and AI-powered automation, strengthening operational control, scalability, and overall business performance.</li></ul></div>
+<div class="card job"><span class="meta">Jun 2022 – Dec 2022 · Silverlight Research Group, Remote, England</span><h3>Data Analyst</h3><ul><li>Partnered with US and UK clients to analyze large-scale datasets, uncovering behavioral trends, seasonality patterns, cyclical fluctuations, and key business drivers to support strategic planning and performance optimization.</li><li>Performed advanced data validation, cleansing, and outlier detection to eliminate bias and improve data reliability, transforming complex datasets into accurate, actionable business insights.</li><li>Developed customized dashboards, reports, and analytics solutions tailored to each client's objectives, translating big data into data-driven recommendations that enhanced operational efficiency, forecasting accuracy, and decision-making.</li></ul></div>
+<div class="card job"><span class="meta">Nov 2020 – Feb 2022 · EIPICO Company, 10th of Ramadan City, Egypt</span><h3>Process &amp; Project Engineer</h3><ul><li>Collaborated with consultants to analyze workforce, machine, and production data, applying Lean Six Sigma methodologies to identify bottlenecks, redesign processes, and optimize production line performance.</li><li>Led data-driven production improvement initiatives, including workflow analysis, line balancing, and machine remodeling, resulting in a <b>35% increase in line capacity utilization</b> and a reduction of more than 40 workforce positions through efficiency gains.</li></ul></div>
+</div></section>
+
+<section class="page" id="services">
+<h2>Services</h2><p class="sub">How I can help your team.</p>
+<div class="grid">
+<div class="card"><div class="ic">🚚</div><h3>Supply Chain Management</h3><p>Planning, sourcing, inventory and logistics optimization.</p></div>
+<div class="card"><div class="ic">♻️</div><h3>Lean Six Sigma</h3><p>Waste reduction, layout redesign and capacity improvement.</p></div>
+<div class="card"><div class="ic">📋</div><h3>Project Management</h3><p>Action plans, delegation, follow-up and executive reporting.</p></div>
+<div class="card"><div class="ic">📈</div><h3>Data Analysis &amp; Reporting</h3><p>Python, SQL and Power BI dashboards for data-driven decisions.</p></div>
+<div class="card"><div class="ic">🤖</div><h3>AI &amp; Workflow Automation</h3><p>Automating repetitive operations with Make, Copilot Studio and Microsoft 365.</p></div></div>
+</section>
+
+<section class="page" id="certificates">
+<h2>Certificates</h2><p class="sub">Professional certifications. Each link opens the verified certificate.</p>
+<div class="tabs" id="tabs"></div><div class="grid" id="certs"></div>
+</section>
+
+<section class="page" id="contact">
+<h2>Contact</h2><p class="sub">Open to operations, project management and AI automation roles.</p>
+<div class="card clist"><h3>Let's talk</h3>
+<p>✉️ Shalansalma@gmail.com</p><p>📞 +20 114 161 7707</p><p>💼 linkedin.com/in/salma-shalan-48b97a281</p>
+<p>📍 Shorouk City, Egypt</p></div>
+<div class="cta"><div class="ctatext"><h2>Have a Project in Mind?</h2><p>I'm available for full-time, and remote opportunities.</p><p style="font-size:1.15rem;font-weight:700;margin:14px 0 0">Let's Build Smarter Operations Together.</p></div><div class="ctaimg"><svg viewBox="0 0 240 200" role="img" aria-label="Connected operations illustration" xmlns="http://www.w3.org/2000/svg"><circle cx="120" cy="100" r="92" fill="#fff" fill-opacity=".12"/><g stroke="#fff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"><line x1="120" y1="100" x2="45" y2="52"/><line x1="120" y1="100" x2="200" y2="48"/><line x1="120" y1="100" x2="196" y2="156"/><line x1="120" y1="100" x2="52" y2="152"/></g><g fill="#fff"><circle cx="45" cy="52" r="15"/><circle cx="200" cy="48" r="15"/><circle cx="196" cy="156" r="15"/><circle cx="52" cy="152" r="15"/><circle cx="120" cy="100" r="30"/></g><g fill="#fff"><rect x="116" y="60" width="8" height="12" rx="2"/><rect x="116" y="128" width="8" height="12" rx="2"/><rect x="80" y="96" width="12" height="8" rx="2"/><rect x="148" y="96" width="12" height="8" rx="2"/></g><circle cx="120" cy="100" r="13" fill="#3454d1"/><circle cx="120" cy="100" r="5" fill="#fff"/><path d="M44 148l6 6 10-12" fill="none" stroke="#3454d1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><g fill="#3454d1"><rect x="38" y="46" width="14" height="4" rx="2"/><rect x="38" y="54" width="14" height="4" rx="2"/><rect x="193" y="42" width="14" height="4" rx="2"/><rect x="193" y="50" width="14" height="4" rx="2"/><path d="M189 160l5-8 5 5 6-9" fill="none" stroke="#3454d1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg></div></div>
+</section>
+</main>
+<footer>© 2026 Salma Shalan</footer>
+<script>
+const C=(t,i,d,g,u)=>({t,i,d,g,u});
+const R="Rutgers University",D="DataCamp",cc="https://coursera.org/share/",dc="https://www.datacamp.com/completed/statement-of-accomplishment/course/";
+const certs=[
+C("Supply Chain Logistics",R,"Jan 17, 2021","97.21%",cc+"8ccbb958b5a6753e16f03b2c61cb8d38"),
+C("Supply Chain Planning",R,"Jan 18, 2022","93.50%",cc+"dc30e84507b862f1f1915468e08f6760"),
+C("Supply Chain Sourcing",R,"Jan 21, 2022","100%",cc+"a6e9f9b2fc72bd9a74541472af18e294"),
+C("Supply Chain Operations",R,"Jan 21, 2022","89.75%",cc+"ec8fed8490c42ed3afa9e9f0606aa316"),
+C("Team Management for the 6σ Black Belt","Kennesaw State University","Feb 13, 2022","86.17%",cc+"4d6fbea106121a03d789cfc5996ee845"),
+C("Google Digital Marketing & E-Commerce","Coursera / Google","Sep 25, 2022","","https://www.credly.com/badges/7c5cdd86-ad5e-4cac-a852-4811fd9b897a"),
+C("Data Communication Concepts",D,"Oct 24, 2023","",dc+"0f726bf5c1d8b577056b9d7dfd982d7e78f73a89"),
+C("PostgreSQL Summary Stats & Window Functions",D,"Oct 25, 2023","",dc+"6f2077422ca0bd199f4ad6dd035450e9a285ccc4"),
+C("Understanding Data Visualization",D,"Oct 22, 2023","",dc+"d26e9ad5d8bf0b1c4f2987d0693315284918e9ca"),
+C("Data Visualization in Power BI",D,"Jul 29, 2023","",dc+"3d2bbb33a15bd9855b9f04f92e599875d345e5d9"),
+C("Joining Data with pandas",D,"Oct 4, 2023","",dc+"4f267708adc4c1fa1079be520fb1190616dcc0d1"),
+C("Exploratory Data Analysis in Python",D,"Oct 6, 2023","",dc+"46062d74a2d0c419c09962b2c6e2b8c974b16e6b"),
+C("Data Manipulation in SQL",D,"Oct 20, 2023","",dc+"55a1ceaa25a58d37cd78bd93d9ce36762309f934"),
+C("Data Manipulation with pandas",D,"May 23, 2023","",dc+"07822c9f3fa3e47e76d897fe6ecab6cea3c2cb79"),
+C("Joining Data in SQL",D,"Oct 18, 2023","",dc+"fb8b66437433b617e5b964ed3cb80a8c3404c57c"),
+C("Intermediate SQL",D,"Oct 15, 2023","",dc+"2bfd1fb3e9fd1c217e0078919d24de7587dca6b8"),
+C("Intermediate Python",D,"May 16, 2023","",dc+"ae92e7d46216fd3d52fd968f8af72c6202e42776")];
+const groups={All:()=>true,"Supply Chain & Lean":c=>/Rutgers|Kennesaw/.test(c.i),"Data & Analytics":c=>c.i===D,Marketing:c=>/Google/.test(c.i)};
+function show(f){document.getElementById('certs').innerHTML=certs.filter(groups[f]).map(c=>`<div class="card cert"><b>${c.t}</b><small>${c.i} · ${c.d}</small>${c.g?`<span class="g">Grade ${c.g}</span>`:''}<a href="${c.u}" target="_blank" rel="noopener">View certificate</a></div>`).join('');
+document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.textContent===f))}
+const tabs=document.getElementById('tabs');Object.keys(groups).forEach(k=>{const b=document.createElement('button');b.textContent=k;b.onclick=()=>show(k);tabs.appendChild(b)});show('All');
+function route(){const h=(location.hash||'#home').slice(1);const id=document.getElementById(h)?h:'home';
+document.querySelectorAll('.page').forEach(p=>p.classList.toggle('on',p.id===id));
+document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+id));scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+</script></body></html>
