@@ -1,170 +1,231 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Salma Shalan | Operations & AI Automation</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<title>Salma Shalan | Operations, Data & AI Automation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#eef2ff;--card:#fff;--ink:#102a43;--mute:#52667a;--teal:#3454d1;--coral:#3454d1;--navy:#16246b;--line:#dde4fa;--tealsoft:#e4eaff;
+:root{--bg:#EEF0F7;--card:#FFFFFF;--ink:#1B1F3B;--mute:#5B6180;--line:#D9DCEB;--acc:#3D5AFE;--ok:#0E9F6E;--accsoft:#E3E8FF;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1623;--card:#13263a;--ink:#eaf2f7;--mute:#9db2c3;--line:#223b52;--tealsoft:#15305e}}
-:root[data-theme="dark"]{--bg:#0b1623;--card:#13263a;--ink:#eaf2f7;--mute:#9db2c3;--line:#223b52;--tealsoft:#15305e}
-*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg) linear-gradient(180deg,rgba(124,150,240,.22),rgba(255,255,255,0) 520px) no-repeat;color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 5vw;flex-wrap:wrap}
-.logo{font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:8px}
-.logo b{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--teal);color:#fff;font-size:.95rem}
-nav{display:flex;gap:4px;flex-wrap:wrap}
-nav a{padding:7px 14px;border-radius:99px;font-weight:500;font-size:.92rem;color:var(--mute)}
-nav a.on{color:var(--teal);background:var(--tealsoft);font-weight:700}
-.btn{display:inline-block;padding:12px 24px;border-radius:99px;font-weight:700;background:var(--coral);color:#fff;border:0;cursor:pointer;font:inherit;font-weight:700}
-.btn.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
-main{width:100%;max-width:none;margin:0;padding:40px 4vw 70px}html,body{overflow-x:hidden}
-.page{display:none}.page.on{display:block}
-h1{font-size:clamp(2.2rem,5.5vw,3.8rem);line-height:1.1;margin:.3em 0;font-weight:800}
-h1 em{font-style:normal;color:var(--coral)}
-h2{font-size:1.9rem;margin:0 0 6px;font-weight:800}
-.sub{color:var(--mute);max-width:60ch;margin:0 0 28px}
-.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;min-height:62vh}
-.tag{display:inline-block;background:var(--tealsoft);color:var(--teal);font-weight:700;font-size:.85rem;padding:5px 14px;border-radius:99px}
-.mono{aspect-ratio:1;max-width:360px;margin:auto;width:100%;border-radius:50% 44% 50% 40%;background:linear-gradient(140deg,var(--teal),#7c96f0);display:grid;place-items:center;color:#fff;font-size:6rem;font-weight:800;position:relative}
-.mono::after{content:"";position:absolute;right:-6%;bottom:8%;width:34%;aspect-ratio:1;border-radius:50%;background:#c3d1ff;z-index:-1}
-.stats{display:flex;gap:22px 28px;margin:28px 0;flex-wrap:wrap}
-.stats div{padding-right:28px;border-right:1px solid var(--line)}.stats div:last-child{border:0}
-.stats b{display:block;font-size:1.8rem;color:var(--teal)}.stats span{color:var(--mute);font-size:.88rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(52,84,209,.08)}
-.card h3{margin:10px 0 6px;font-size:1.05rem}.card p{margin:0;color:var(--mute);font-size:.93rem}
-.ic{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:1.25rem;background:var(--tealsoft)}
-.card:nth-child(even) .ic{background:#d4defd}
-.band{background:var(--navy);color:#fff;border-radius:22px;padding:34px;margin-top:44px}
-.band h2{color:#fff}.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;margin-top:18px}
-.steps div{background:rgba(255,255,255,.08);border-radius:14px;padding:16px;font-size:.92rem}.steps b{color:#aebfff;display:block;margin-bottom:4px}
-.tl{border-left:3px solid var(--teal);margin-left:8px;padding-left:26px}
-.job{position:relative;margin-bottom:22px}.job::before{content:"";position:absolute;left:-36px;top:24px;width:15px;height:15px;border-radius:50%;background:var(--coral);border:3px solid var(--bg)}
-.job .meta{color:var(--teal);font-weight:700;font-size:.88rem}.job ul{margin:10px 0 0;padding-left:18px;color:var(--mute);font-size:.94rem}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chips span{background:var(--tealsoft);color:var(--teal);padding:5px 13px;border-radius:99px;font-size:.84rem;font-weight:700}
-.cert{display:flex;flex-direction:column;gap:6px}.cert small{color:var(--mute)}.cert a{color:var(--teal);font-weight:700;font-size:.9rem}
-.cert .g{align-self:flex-start;background:#e4eaff;color:#2a3fa8;border-radius:99px;padding:2px 11px;font-size:.8rem;font-weight:700}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.tabs button{padding:8px 18px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
-.tabs button.on{background:var(--teal);color:#fff;border-color:var(--teal)}
-.cta{background:linear-gradient(120deg,#2a3fa8,#3454d1 55%,#7c96f0);color:#fff;border-radius:22px;padding:36px;margin-top:40px}
-.cta h2{color:#fff}.cta .btn{background:var(--navy)}
-.clist a,.clist p{display:block;margin:6px 0}
-footer{text-align:center;color:var(--mute);font-size:.85rem;padding:24px}
-@media(max-width:760px){.hero{grid-template-columns:1fr}.mono{max-width:220px;font-size:4rem;order:-1}}
-@media(prefers-reduced-motion:no-preference){.page.on{animation:in .35s ease}@keyframes in{from{opacity:0;transform:translateY(8px)}}}
-.mono{background:none;border-radius:0;aspect-ratio:1;display:block;font-size:0;max-width:420px}.mono::after{display:none}.mono svg{width:100%;height:100%;display:block}@media(max-width:760px){.mono{max-width:260px}}
-.hl{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:8px}.hl li{position:relative;padding-left:26px}.hl li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;border-radius:50%;background:var(--teal)}.hl b{font-weight:800}.hl i{color:var(--mute)}
-.tagline{max-width:none}@media(min-width:700px){.tagline{white-space:nowrap;font-size:clamp(.8rem,1.55vw,1rem)}}
-.cta{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.ctatext{flex:1 1 280px}.ctaimg{flex:0 1 230px;width:230px;max-width:100%}.ctaimg svg{width:100%;height:auto;display:block}
-</style></head><body>
-<header><a class="logo" href="#home"><b>S</b>Salma Shalan</a>
-<nav id="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a></nav>
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12142A;--card:#1B1E3C;--ink:#ECEEFB;--mute:#9EA4CC;--line:#2C3060;--acc:#8EA0FF;--ok:#4ADE9B;--accsoft:#262A5A}}
+:root[data-theme="dark"]{--bg:#12142A;--card:#1B1E3C;--ink:#ECEEFB;--mute:#9EA4CC;--line:#2C3060;--acc:#8EA0FF;--ok:#4ADE9B;--accsoft:#262A5A}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+nav b{font-weight:800;font-size:18px}
+nav div{display:flex;gap:18px;font-size:15px}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover,nav a:focus-visible{color:var(--acc)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:56px 0 72px}
+h1{font-size:clamp(38px,6.4vw,68px);line-height:1.02;letter-spacing:-.03em;font-weight:800;margin:0 0 20px}
+.lead{font-size:19px;color:var(--mute);max-width:34em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.p{background:var(--acc);color:#fff}
+:root[data-theme="dark"] .btn.p{color:#12142A}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.p{color:#12142A}}
+.btn.s{border:1.5px solid var(--line);background:var(--card)}
+.flow{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px}
+.flow h2{font-size:14px;margin:0 0 14px;color:var(--mute);font-weight:600}
+.step{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:14px;border:1px solid var(--line);margin-bottom:10px;opacity:.35;animation:on .5s forwards}
+.step i{width:11px;height:11px;border-radius:50%;background:var(--line);flex:none;animation:dot .5s forwards}
+.step small{display:block;color:var(--mute);font-size:13px;line-height:1.3}
+.step:nth-of-type(1){animation-delay:.6s}.step:nth-of-type(1) i{animation-delay:.6s}
+.step:nth-of-type(2){animation-delay:1.5s}.step:nth-of-type(2) i{animation-delay:1.5s}
+.step:nth-of-type(3){animation-delay:2.4s}.step:nth-of-type(3) i{animation-delay:2.4s}
+.step:nth-of-type(4){animation-delay:3.3s;margin-bottom:0}.step:nth-of-type(4) i{animation-delay:3.3s}
+@keyframes on{to{opacity:1;background:var(--accsoft);border-color:var(--acc)}}
+@keyframes dot{to{background:var(--ok)}}
+@media (prefers-reduced-motion:reduce){.step,.step i{animation-duration:.01s;animation-delay:0s!important}}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2.t{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin:0 0 10px;line-height:1.1;font-weight:800}
+.sub{color:var(--mute);max-width:36em;margin:0 0 30px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.stat b{font-size:34px;line-height:1;font-weight:800;color:var(--acc)}
+.stat p{margin:8px 0 0;color:var(--mute);font-size:15px;line-height:1.4}
+.auto{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.box h3{margin:0 0 8px;font-size:20px}
+.box p{margin:0;color:var(--mute);font-size:16px}
+.loop{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.loop span{background:var(--accsoft);padding:9px 16px;border-radius:999px;font-weight:600;font-size:15px}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.proj a.box{text-decoration:none;display:block}
+.proj a.box:hover{border-color:var(--acc)}
+.tag{display:inline-block;font-size:13px;color:var(--acc);font-weight:600;margin-bottom:8px}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.tl li:last-child{border:0}
+.tl time{color:var(--mute);font-size:15px}
+.tl b{font-size:19px}
+.tl p{margin:4px 0 0;color:var(--mute);font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{border:1.5px solid var(--line);background:var(--card);padding:8px 16px;border-radius:999px;font-size:15px}
+.cta{background:var(--ink);color:var(--bg);border-radius:26px;padding:44px 28px;text-align:center}
+.cta h2{margin:0 0 10px;font-size:clamp(28px,4.4vw,44px);letter-spacing:-.02em;line-height:1.1}
+.cta p{margin:0 0 24px;opacity:.8}
+.cta .btn{background:var(--bg);color:var(--ink);margin:4px}
+footer{padding:28px 0 40px;color:var(--mute);font-size:14px;text-align:center}
+:root{--hl:#FFE45C}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--hl:#4A3FCB}}
+:root[data-theme="dark"]{--hl:#4A3FCB}
+
+h1 span.hl{display:inline;width:auto}
+.glow{position:fixed;inset:0;pointer-events:none;background:radial-gradient(420px circle at var(--mx,70%) var(--my,20%),var(--accsoft),transparent 70%);z-index:-1}
+.tog,.replay{font:inherit;cursor:pointer;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 14px;font-size:14px}
+.replay{margin-top:12px}
+.type{color:var(--acc);font-weight:800;border-right:3px solid var(--acc);padding-right:3px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.filters button{font:inherit;cursor:pointer;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 16px;font-size:15px}
+.filters button.on{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+.proj a.box,.stat,.auto .box{transition:transform .2s,border-color .2s,box-shadow .2s}
+.proj a.box:hover,.stat:hover,.auto .box:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(61,90,254,.18);border-color:var(--acc)}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;align-items:center}
+.calc label{display:block;font-weight:600;margin:0 0 6px}
+.calc input[type=range]{width:100%;accent-color:var(--acc);margin-bottom:16px}
+.out{background:var(--accsoft);border-radius:18px;padding:24px;text-align:center}
+.out b{font-size:48px;line-height:1;color:var(--acc);font-weight:800}
+.prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s,box-shadow .2s}
+.prod:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(61,90,254,.18);border-color:var(--acc)}
+.prod h3{margin:0 0 4px;font-size:30px;letter-spacing:-.02em;line-height:1.1}
+.prod .kick{color:var(--acc);font-weight:600;font-size:15px;margin:0 0 12px}
+.prod p{margin:0 0 14px;color:var(--mute);font-size:16px}
+.prod .kick{color:var(--acc)}
+.prod ul{margin:0 0 20px;padding-left:20px;font-size:15.5px}
+.prod li{margin-bottom:6px}
+.prod .meta{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.prod .meta span{background:var(--accsoft);padding:5px 12px;border-radius:999px;font-size:13.5px;font-weight:600}
+.prod .meta a{margin-left:auto;font-weight:700;background:var(--acc);color:var(--bg);text-decoration:none;padding:6px 16px;border-radius:999px;font-size:14.5px}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px}.tl li{grid-template-columns:1fr;gap:4px}nav{flex-wrap:wrap;gap:6px 12px}nav div{gap:6px 12px;font-size:14px;flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Salma Shalan</b><div><a href="#ai">AI automation</a><a href="#products">Products</a><a href="#work">Work</a><a href="#path">Path</a><a href="#contact">Contact</a><button class="tog" id="tog" aria-label="Toggle light and dark theme">◐</button></div></nav><div class="glow"></div>
+
+<header class="hero">
+<div>
+<h1><span class="hl">I turn messy operations into systems that run themselves.</span></h1>
+<p class="lead">Operations manager and machine learning engineer. I map the process, measure the waste, then automate it with data, dashboards and AI agents. I also design and build my own products: Nudge, Chronos and WayMates.</p>
+<p class="lead" style="margin-bottom:20px">Right now I would automate <span class="type" id="type"></span></p><div class="btns"><a class="btn p" href="#contact">Work with me</a><a class="btn s" href="#work">See projects</a></div>
+</div>
+<div class="flow" aria-label="Example automation flow">
+<h2>A workflow I would build for you</h2>
+<div class="step"><i></i><div><b>Request arrives</b><small>Your CRM captures the lead or order</small></div></div>
+<div class="step"><i></i><div><b>AI agent triages it</b><small>Copilot Studio classifies and routes</small></div></div>
+<div class="step"><i></i><div><b>Data updates itself</b><small>Python script cleans and logs every run</small></div></div>
+<div class="step"><i></i><div><b>Dashboard goes live</b><small>Power BI shows the decision, not the data</small></div></div>
+<button class="replay" id="replay">Replay flow</button>
+</div>
 </header>
-<main>
 
-<section class="page" id="home">
-<div class="hero"><div>
-<span class="tag">Operations Manager &amp; AI Automation</span>
-<h1>Driving Operational Excellence at Scale, <em>Powered by Data, Automation &amp; AI</em></h1>
-<p class="sub">I transform complex operations into scalable systems through process optimization, data analytics, automation, and AI.</p>
-<a class="btn" href="#experience">View My Work</a> <a class="btn ghost" href="#contact">Get in Touch</a>
-<div class="stats"><div><b>6+</b><span>Years in operations</span></div><div><b>17</b><span>Certifications</span></div><div><b>US, UK &amp; Middle East</b><span>Clients Supported</span></div></div>
-</div><div class="mono"><svg viewBox="0 0 400 400" role="img" aria-label="Operations dashboard illustration" xmlns="http://www.w3.org/2000/svg">
-<path d="M70 120C70 60 140 30 210 40s130 50 130 130-40 170-140 185S60 300 70 120Z" fill="#e4eaff"/>
-<circle cx="330" cy="310" r="46" fill="#c3d1ff"/>
-<rect x="55" y="85" width="270" height="200" rx="22" fill="#fff" stroke="#d9e3f5" stroke-width="2"/>
-<circle cx="80" cy="108" r="6" fill="#7c96f0"/><circle cx="98" cy="108" r="6" fill="#aebfff"/><circle cx="116" cy="108" r="6" fill="#d4defd"/>
-<rect x="75" y="135" width="110" height="130" rx="12" fill="#f2f6ff"/>
-<rect x="90" y="215" width="16" height="35" rx="4" fill="#aebfff"/><rect x="114" y="190" width="16" height="60" rx="4" fill="#7c96f0"/><rect x="138" y="165" width="16" height="85" rx="4" fill="#3454d1"/><rect x="162" y="150" width="14" height="100" rx="4" fill="#16246b"/>
-<rect x="200" y="135" width="105" height="60" rx="12" fill="#f2f6ff"/>
-<polyline points="212,180 235,165 255,172 280,148 296,152" fill="none" stroke="#3454d1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="296" cy="152" r="5" fill="#3454d1"/>
-<circle cx="236" cy="236" r="28" fill="none" stroke="#d4defd" stroke-width="12"/>
-<circle cx="236" cy="236" r="28" fill="none" stroke="#3454d1" stroke-width="12" stroke-dasharray="125 176" stroke-linecap="round" transform="rotate(-90 236 236)"/>
-<rect x="278" y="215" width="30" height="8" rx="4" fill="#7c96f0"/><rect x="278" y="232" width="24" height="8" rx="4" fill="#d4defd"/><rect x="278" y="249" width="30" height="8" rx="4" fill="#aebfff"/>
-<g transform="translate(300 80)"><circle r="38" fill="#16246b"/><circle r="14" fill="#fff"/><g fill="#16246b"><rect x="-4" y="-27" width="8" height="12" rx="2"/><rect x="-4" y="15" width="8" height="12" rx="2"/><rect x="-27" y="-4" width="12" height="8" rx="2"/><rect x="15" y="-4" width="12" height="8" rx="2"/></g><circle r="14" fill="none" stroke="#16246b" stroke-width="6"/></g>
-<g transform="translate(75 300)"><rect width="150" height="54" rx="16" fill="#3454d1"/><circle cx="28" cy="27" r="14" fill="#fff"/><path d="M21 27l5 5 9-10" fill="none" stroke="#3454d1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="52" y="18" width="80" height="8" rx="4" fill="#fff"/><rect x="52" y="33" width="52" height="8" rx="4" fill="#aebfff"/></g>
-</svg></div></div>
-<h2>Services</h2><p class="sub">How I can help your team.</p>
-<div class="grid">
-<div class="card"><div class="ic">🚚</div><h3>Supply Chain Management</h3><p>Planning, sourcing, inventory and logistics optimization.</p></div>
-<div class="card"><div class="ic">♻️</div><h3>Lean Six Sigma</h3><p>Waste reduction, layout redesign and capacity improvement.</p></div>
-<div class="card"><div class="ic">📋</div><h3>Project Management</h3><p>Action plans, delegation, follow-up and executive reporting.</p></div>
-<div class="card"><div class="ic">📈</div><h3>Data Analysis &amp; Reporting</h3><p>Python, SQL and Power BI dashboards for data-driven decisions.</p></div>
-<div class="card"><div class="ic">🤖</div><h3>AI &amp; Workflow Automation</h3><p>Automating repetitive operations with Make, Copilot Studio and Microsoft 365.</p></div></div>
-<div class="band"><h2>How I Work</h2><div class="steps"><div><b>Discover</b>Interview stakeholders and map the real process.</div><div><b>Define</b>Set objectives, deliverables and timelines.</div><div><b>Improve</b>Remove bottlenecks with Lean and automation.</div><div><b>Deliver</b>Track results and report clearly.</div></div></div>
+<section>
+<h2 class="t">Results I can point to</h2>
+<p class="sub">Numbers from my roles in manufacturing, operations and analytics.</p>
+<div class="stats">
+<div class="stat"><b>35%</b><p>more line capacity used at EIPICO, with 40+ fewer workers needed</p></div>
+<div class="stat"><b>20%</b><p>productivity gain across three major projects at YouMats</p></div>
+<div class="stat"><b>15%</b><p>efficiency gain by running operations from manufacturing to delivery</p></div>
+<div class="stat"><b>35%</b><p>better forecast accuracy when a neural network used stock and price data</p></div>
+<div class="stat"><b>12%</b><p>more accurate stock after a new inventory system</p></div>
+<div class="stat"><b>10%</b><p>less waste after fixing bottlenecks with production and logistics</p></div>
+</div>
 </section>
 
-<section class="page" id="about">
-<h2>About Me</h2><p class="sub tagline">Operations &amp; Project Management Professional | Process Optimization | AI Automation | Data Analytics</p>
-<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
-<div class="card"><h3>My story</h3><p>I'm an operations manager with over six years of experience optimizing supply chains and using AI-driven data analysis to deliver actionable recommendations. I move comfortably between strategy and execution: from redesigning production lines to building dashboards and automations that keep teams aligned.</p></div>
-<div class="card"><h3>Education</h3><p><b>M.Eng. Machine Learning</b>, minor in Forecasting Techniques, Zagazig University (2020 to present)<br><br><b>B.Eng. Industrial Engineering</b>, minor in Supply Chain Management, Zagazig University (2015 to 2020)</p></div></div>
-<div class="card" style="margin-top:18px"><h3>Tools I use</h3><div class="chips"><span>Power BI</span><span>Python</span><span>SQL</span><span>Make</span><span>Copilot Studio</span><span>Microsoft 365</span><span>Google Workspace</span><span>Bitrix24</span><span>Trello</span><span>ClickUp</span></div>
-<h3 style="margin-top:18px">Core skills</h3><div class="chips"><span>Supply Chain</span><span>Lean Six Sigma</span><span>Purchasing</span><span>Risk &amp; Budget Control</span><span>Stakeholder Communication</span><span>Bilingual: Arabic &amp; English</span></div></div>
+<section id="ai">
+<h2 class="t">AI automation</h2>
+<p class="sub">I don't add AI for show. I find the repeated task, check that it is worth automating, then build it so it keeps working.</p>
+<div class="auto">
+<div class="box"><h3>AI agents</h3><p>Copilot Studio at YouMats to bring AI into daily operations, and Nora, the agent inside Chronos that explains forecasts when you ask.</p></div>
+<div class="box"><h3>Workflow automation</h3><p>Bitrix24, ClickUp, Trello and Make scenarios for sales, reception and project follow-up.</p></div>
+<div class="box"><h3>Data pipelines</h3><p>A Python pipeline that pulls CSVs from FTP, saves to SharePoint, runs a macro, with YAML config, logging and unit tests.</p></div>
+<div class="box"><h3>Forecasting with ML</h3><p>Neural networks and deep learning for demand and sales prediction. My Master's research compares them with classic time series, and Chronos turns it into a product.</p></div>
+</div>
+<div class="loop" aria-label="My automation method"><span>1. Map the process</span><span>2. Measure the waste</span><span>3. Automate the repeat</span><span>4. Monitor and improve</span></div>
 </section>
 
-<section class="page" id="experience">
-<h2>Experience</h2><p class="sub">Where I've delivered results.</p>
-<div class="tl">
-<div class="card job"><span class="meta">Jun 2026 – Present · Micro1 Company, Remote, Egypt</span><h3>Business Operations Specialist</h3><ul><li>Optimized operational workflows and business processes, improving efficiency and supporting data-driven decision-making across teams.</li><li>Leveraged AI tools and automation solutions to streamline repetitive tasks, enhance productivity, and reduce manual effort.</li><li>Coordinated cross-functional initiatives to improve communication, execution, and overall operational performance.</li><li>Supported AI model training and data quality initiatives by delivering accurate data annotation, validation, and continuous process improvements for machine learning systems.</li></ul></div>
-<div class="card job"><span class="meta">Jan 2025 – Present · MAESTRO BII Company, Remote, Egypt</span><h3>Project Manager</h3><ul><li>Led cross-functional projects and marketing operations, overseeing planning, execution, stakeholder alignment, and performance tracking to ensure successful delivery.</li><li>Analyzed and optimized business processes, developed SOPs, and delivered training programs to drive operational excellence and standardize workflows.</li><li>Designed and implemented automation solutions and system controls using AI-powered tools, reducing manual effort and improving efficiency, accuracy, and scalability.</li><li>Produced executive reports, MOMs, proposals, quotations, and strategic reviews while translating data and insights into actionable business decisions.</li></ul></div>
-<div class="card job"><span class="meta">Jan 2023 – Dec 2024 · YouMats Company, Remote, Saudi Arabia</span><h3>Operations Manager</h3><ul><li>Led end-to-end supply chain and operations improvement initiatives across Customer Service, Sales, E-commerce, Forecasting, Manufacturing, Logistics, and Procurement functions, enhancing cross-functional alignment and operational efficiency.</li><li>Optimized recruitment processes from job posting and candidate sourcing to screening, interviewing, and evaluation, supporting the acquisition of high-quality talent aligned with business needs.</li><li>Partnered with web development and business teams to analyze customer journeys, identify drop-off points, and implement process improvements that enhance customer experience and conversion performance.</li><li>Driven continuous improvement initiatives through process analysis, workflow redesign, SOP development, team training, and AI-powered automation, strengthening operational control, scalability, and overall business performance.</li></ul></div>
-<div class="card job"><span class="meta">Jun 2022 – Dec 2022 · Silverlight Research Group, Remote, England</span><h3>Data Analyst</h3><ul><li>Partnered with US and UK clients to analyze large-scale datasets, uncovering behavioral trends, seasonality patterns, cyclical fluctuations, and key business drivers to support strategic planning and performance optimization.</li><li>Performed advanced data validation, cleansing, and outlier detection to eliminate bias and improve data reliability, transforming complex datasets into accurate, actionable business insights.</li><li>Developed customized dashboards, reports, and analytics solutions tailored to each client's objectives, translating big data into data-driven recommendations that enhanced operational efficiency, forecasting accuracy, and decision-making.</li></ul></div>
-<div class="card job"><span class="meta">Nov 2020 – Feb 2022 · EIPICO Company, 10th of Ramadan City, Egypt</span><h3>Process &amp; Project Engineer</h3><ul><li>Collaborated with consultants to analyze workforce, machine, and production data, applying Lean Six Sigma methodologies to identify bottlenecks, redesign processes, and optimize production line performance.</li><li>Led data-driven production improvement initiatives, including workflow analysis, line balancing, and machine remodeling, resulting in a <b>35% increase in line capacity utilization</b> and a reduction of more than 40 workforce positions through efficiency gains.</li></ul></div>
-</div></section>
-
-<section class="page" id="projects">
-<h2>Projects</h2><p class="sub">Selected supply chain, analytics and automation projects. Each one links to the full work.</p>
-<div class="grid" id="projs" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))"></div>
+<section id="products">
+<h2 class="t">Products I build</h2>
+<p class="sub">Three products I designed from the first document to the working app, built with Claude Code.</p>
+<div class="prods">
+<article class="prod"><h3>Nudge</h3><p class="kick">Small Signals. Smarter Actions.</p><p>An AI guide that watches for small shifts in your sleep, focus and daily habits, measured against your own baseline. It does not diagnose.</p><ul><li>A voice guide shown as a pulsing orb that speaks and explains</li><li>Cognitive tests built on published studies</li><li>Health device connections and a clinician portal</li><li>Demo mode so anyone can try it without an account</li></ul><div class="meta"><span>Brain health</span><span>Claude Code</span><a href="https://nudge-aurixa.vercel.app" target="_blank" rel="noopener">Open Nudge</a></div></article>
+<article class="prod"><h3>Chronos</h3><p class="kick">Sales forecasting with an AI agent</p><p>Give Chronos your sales data. It cleans it, runs traditional, machine learning and deep learning models, compares them and forecasts with a range. Nora, the built-in agent, explains the results when you ask.</p><ul><li>Excel and CSV input, one dataset or several merged</li><li>Models compared on 5 error measures, WAPE first</li><li>Fast, normal and deep runs with hyperparameter tuning</li><li>Live dashboard in Arabic and English with Egyptian holidays built in</li></ul><div class="meta"><span>Forecasting</span><span>Master's research</span><span>Runs locally</span></div></article>
+<article class="prod"><h3>WayMates</h3><p class="kick">Ride matching across Egypt</p><p>Connects car owners and riders heading the same way. Matches are made on a shared part of the road, so trips do not need the same start and end points. The product ends at the introduction.</p><ul><li>Recurring weekly trips and one-time trips</li><li>Arabic and English, maps on OpenStreetMap</li><li>Optional same-gender filter</li><li>WhatsApp or call contact once both sides accept</li></ul><div class="meta"><span>Web app</span><span>Claude Code</span></div></article>
+</div>
 </section>
 
-<section class="page" id="certificates">
-<h2>Certificates</h2><p class="sub">Professional certifications. Each link opens the verified certificate.</p>
-<div class="tabs" id="tabs"></div><div class="grid" id="certs"></div>
+<section id="work">
+<h2 class="t">Selected work</h2>
+<p class="sub">Each card opens the full project.</p>
+<div class="filters"><button class="on" data-f="all">All</button><button data-f="ai">AI and data</button><button data-f="ops">Operations</button></div>
+<div class="proj">
+<a class="box" href="https://drive.google.com/file/d/1ZzDZ_jCILlyX0aFcK20H8jxgoEO6QiPi/view?usp=drive_link" target="_blank" rel="noopener"><span class="tag">Research · Machine learning</span><h3>Time series vs AI for retail forecasting</h3><p>ANNs beat time series on high-variance retail data. Adding stock and price lifted accuracy by 35%.</p></a>
+<a class="box" href="https://drive.google.com/file/d/1xACgmqM4LCaxRVY6MtGlJ_pL3T8UxyH-/view?usp=sharing" target="_blank" rel="noopener"><span class="tag">Automation · Python</span><h3>FTP to SharePoint data pipeline</h3><p>Automated extraction, a macro step, logging, YAML configuration and unit tests.</p></a>
+<a class="box" href="https://drive.google.com/file/d/1DBIO6PCf_-MUwIl27RTgAIgCs01JDCGf/view?usp=sharing" target="_blank" rel="noopener"><span class="tag">Analytics · Power BI</span><h3>Supply chain analytics dashboard</h3><p>Found strong markets and weak spots in planning, inventory, shipping and logistics.</p></a>
+<a class="box" href="https://docs.google.com/document/d/1v9-2OQofBr7tvFcpG6w2fIBskMY5HmNQXiuZO0PVp_w/edit?usp=sharing" target="_blank" rel="noopener"><span class="tag">Operations</span><h3>LogiLess</h3><p>A new operating system to cut logistics delays and tighten workflows.</p></a>
+<a class="box" href="https://docs.google.com/spreadsheets/d/12C5s4hCMZw83Mg2d4GDcDCOsbeTssDgN4lPskk1OBtg/edit?usp=drive_link" target="_blank" rel="noopener"><span class="tag">Manufacturing</span><h3>Pharma production capacity</h3><p>Located bottlenecks and reallocated resources to meet demand at lower cost.</p></a>
+<a class="box" href="https://docs.google.com/presentation/d/1IN_3hqOGCdT7Oh4fyFL6pcNOjxZHHKtFnhcAVl9rIzM/edit?usp=drive_link" target="_blank" rel="noopener"><span class="tag">Planning</span><h3>Veiladati production and transport plan</h3><p>Demand forecast, capacity plan, profitability statement and the best transport route for a Middle East expansion.</p></a>
+</div>
 </section>
 
-<section class="page" id="contact">
-<h2>Contact</h2><p class="sub">Open to operations, project management and AI automation roles.</p>
-<div class="card clist"><h3>Let's talk</h3>
-<p>✉️ Shalansalma@gmail.com</p><p>📞 +20 114 161 7707</p><p>💼 linkedin.com/in/salma-shalan-48b97a281</p>
-<p>📍 Shorouk City, Egypt</p></div>
-<div class="cta"><div class="ctatext"><h2>Have a Project in Mind?</h2><p>I'm available for full-time, and remote opportunities.</p><p style="font-size:1.15rem;font-weight:700;margin:14px 0 0">Let's Build Smarter Operations Together.</p></div><div class="ctaimg"><svg viewBox="0 0 240 200" role="img" aria-label="Connected operations illustration" xmlns="http://www.w3.org/2000/svg"><circle cx="120" cy="100" r="92" fill="#fff" fill-opacity=".12"/><g stroke="#fff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"><line x1="120" y1="100" x2="45" y2="52"/><line x1="120" y1="100" x2="200" y2="48"/><line x1="120" y1="100" x2="196" y2="156"/><line x1="120" y1="100" x2="52" y2="152"/></g><g fill="#fff"><circle cx="45" cy="52" r="15"/><circle cx="200" cy="48" r="15"/><circle cx="196" cy="156" r="15"/><circle cx="52" cy="152" r="15"/><circle cx="120" cy="100" r="30"/></g><g fill="#fff"><rect x="116" y="60" width="8" height="12" rx="2"/><rect x="116" y="128" width="8" height="12" rx="2"/><rect x="80" y="96" width="12" height="8" rx="2"/><rect x="148" y="96" width="12" height="8" rx="2"/></g><circle cx="120" cy="100" r="13" fill="#3454d1"/><circle cx="120" cy="100" r="5" fill="#fff"/><path d="M44 148l6 6 10-12" fill="none" stroke="#3454d1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><g fill="#3454d1"><rect x="38" y="46" width="14" height="4" rx="2"/><rect x="38" y="54" width="14" height="4" rx="2"/><rect x="193" y="42" width="14" height="4" rx="2"/><rect x="193" y="50" width="14" height="4" rx="2"/><path d="M189 160l5-8 5 5 6-9" fill="none" stroke="#3454d1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg></div></div>
+<section>
+<h2 class="t">What could automation give you back?</h2>
+<p class="sub">Move the sliders. It is a rough estimate to start the conversation.</p>
+<div class="calc"><div>
+<label for="hrs">Repetitive work per week: <span id="hv"></span> hours</label><input id="hrs" type="range" min="1" max="40" value="10">
+<label for="pct">Share a workflow could take over: <span id="pv"></span>%</label><input id="pct" type="range" min="10" max="90" step="5" value="50">
+</div><div class="out"><b id="yr"></b><p style="margin:8px 0 0">hours back per year, about <span id="dy"></span> working days</p></div></div>
 </section>
-</main>
-<footer>© 2026 Salma Shalan</footer>
+
+<section id="path">
+<h2 class="t">Path</h2>
+<ul class="tl">
+<li><time>Jun 2026 – now</time><div><b>Business Operations Specialist, micro1</b><p>Freelance, remote. Analyzing workflows, optimizing processes and supporting data-driven decisions, while bridging operations, cross-functional coordination and AI model training so machine learning systems get high-quality data.</p></div></li>
+<li><time>Jan 2025 – now</time><div><b>Project Manager, MAESTRO BII</b><p>Led a marketing team, turned interviews into executive profiles, wrote action plans and proposals in English and Arabic.</p></div></li>
+<li><time>Jan 2023 – Dec 2024</time><div><b>Operations Manager, YouMats</b><p>Ran operations end to end, rebuilt sales and reception, brought Power BI, Bitrix24 and Copilot Studio into the business.</p></div></li>
+<li><time>Jun 2022 – Dec 2022</time><div><b>Data Analyst, Silverlight Research Group</b><p>Built reports and dashboards for leadership and lifted data accuracy by 15%.</p></div></li>
+<li><time>Nov 2020 – Feb 2022</time><div><b>Process and Project Engineer, EIPICO</b><p>Applied Lean Six Sigma to production lines and delivered cross-department projects on deadline.</p></div></li>
+<li><time>2020 – now</time><div><b>MEng, Machine Learning, Zagazig University</b><p>Minor in Forecasting Techniques. Bachelor of Engineering in Industry, 2015–2020.</p></div></li>
+</ul>
+</section>
+
+<section>
+<h2 class="t">Tools</h2>
+<div class="chips"><span>Power BI</span><span>Python</span><span>Copilot Studio</span><span>Claude Code</span><span>Bitrix24</span><span>ClickUp</span><span>Trello</span><span>Microsoft 365</span><span>Make</span><span>Google Workspace</span><span>Excel</span><span>Lean Six Sigma</span><span>Supply chain</span><span>Arabic and English</span></div>
+</section>
+
+<section id="contact">
+<div class="cta">
+<h2>Got a process that eats your week?</h2>
+<p>Send it over. I will tell you what to automate first.</p>
+<a class="btn" href="mailto:Shalansalma@gmail.com">Shalansalma@gmail.com</a>
+<a class="btn" href="http://linkedin.com/in/salma-shalan-48b97a281" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://www.instagram.com/explainedbysalma/" target="_blank" rel="noopener">Instagram</a>
+</div>
+</section>
+<footer>Salma Shalan · Shorouk City, Egypt · +20 114 161 7707</footer>
+</div>
 <script>
-const C=(t,i,d,g,u)=>({t,i,d,g,u});
-const R="Rutgers University",D="DataCamp",cc="https://coursera.org/share/",dc="https://www.datacamp.com/completed/statement-of-accomplishment/course/";
-const certs=[
-C("Supply Chain Logistics",R,"Jan 17, 2021","97.21%",cc+"8ccbb958b5a6753e16f03b2c61cb8d38"),
-C("Supply Chain Planning",R,"Jan 18, 2022","93.50%",cc+"dc30e84507b862f1f1915468e08f6760"),
-C("Supply Chain Sourcing",R,"Jan 21, 2022","100%",cc+"a6e9f9b2fc72bd9a74541472af18e294"),
-C("Supply Chain Operations",R,"Jan 21, 2022","89.75%",cc+"ec8fed8490c42ed3afa9e9f0606aa316"),
-C("Team Management for the 6σ Black Belt","Kennesaw State University","Feb 13, 2022","86.17%",cc+"4d6fbea106121a03d789cfc5996ee845"),
-C("Google Digital Marketing & E-Commerce","Coursera / Google","Sep 25, 2022","","https://www.credly.com/badges/7c5cdd86-ad5e-4cac-a852-4811fd9b897a"),
-C("Data Communication Concepts",D,"Oct 24, 2023","",dc+"0f726bf5c1d8b577056b9d7dfd982d7e78f73a89"),
-C("PostgreSQL Summary Stats & Window Functions",D,"Oct 25, 2023","",dc+"6f2077422ca0bd199f4ad6dd035450e9a285ccc4"),
-C("Understanding Data Visualization",D,"Oct 22, 2023","",dc+"d26e9ad5d8bf0b1c4f2987d0693315284918e9ca"),
-C("Data Visualization in Power BI",D,"Jul 29, 2023","",dc+"3d2bbb33a15bd9855b9f04f92e599875d345e5d9"),
-C("Joining Data with pandas",D,"Oct 4, 2023","",dc+"4f267708adc4c1fa1079be520fb1190616dcc0d1"),
-C("Exploratory Data Analysis in Python",D,"Oct 6, 2023","",dc+"46062d74a2d0c419c09962b2c6e2b8c974b16e6b"),
-C("Data Manipulation in SQL",D,"Oct 20, 2023","",dc+"55a1ceaa25a58d37cd78bd93d9ce36762309f934"),
-C("Data Manipulation with pandas",D,"May 23, 2023","",dc+"07822c9f3fa3e47e76d897fe6ecab6cea3c2cb79"),
-C("Joining Data in SQL",D,"Oct 18, 2023","",dc+"fb8b66437433b617e5b964ed3cb80a8c3404c57c"),
-C("Intermediate SQL",D,"Oct 15, 2023","",dc+"2bfd1fb3e9fd1c217e0078919d24de7587dca6b8"),
-C("Intermediate Python",D,"May 16, 2023","",dc+"ae92e7d46216fd3d52fd968f8af72c6202e42776")];
-const groups={All:()=>true,"Supply Chain & Lean":c=>/Rutgers|Kennesaw/.test(c.i),"Data & Analytics":c=>c.i===D,Marketing:c=>/Google/.test(c.i)};
-function show(f){document.getElementById('certs').innerHTML=certs.filter(groups[f]).map(c=>`<div class="card cert"><b>${c.t}</b><small>${c.i} · ${c.d}</small>${c.g?`<span class="g">Grade ${c.g}</span>`:''}<a href="${c.u}" target="_blank" rel="noopener">View certificate</a></div>`).join('');
-document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.textContent===f))}
-const tabs=document.getElementById('tabs');Object.keys(groups).forEach(k=>{const b=document.createElement('button');b.textContent=k;b.onclick=()=>show(k);tabs.appendChild(b)});show('All');
-const projects=[["Supply Chain Analytics using Power BI", "The company's supply chain analysis revealed strengths in certain markets and products, but also highlighted areas for improvement in planning, inventory, shipping, and logistics. Recommendations include expanding market reach, optimizing product portfolio, enhancing customer loyalty, and improving operational efficiency.", ["Power BI", "Supply Chain"], "https://drive.google.com/file/d/1DBIO6PCf_-MUwIl27RTgAIgCs01JDCGf/view?usp=sharing"], ["Predicting Character Depletion: A Python-Based Analysis", "Based on the analysis, assuming consistent consumption rates, all market segments, except for \"Company\", are projected to have sufficient inventory for over 100 years. However, Company's reserves are expected to deplete within approximately 15 years.", ["Python", "Forecasting"], "https://docs.google.com/spreadsheets/d/1ifZFJK48g5tD0ns8PZ9N685Ub76bj4WXy1cA0eCXNME/edit?usp=drive_link"], ["Veiladati's Supply Chain Challenge: A Tender for Optimal Transportation", "Veiladati, an Italian calcium carbonate company, is expanding into the Middle East. They require a solution to devise the most efficient and cost-effective transportation plan for their equipment and raw materials from various global suppliers to their new facility. After a thorough analysis of various transportation options, the most optimal plan was selected based on factors such as cost, lead time, and route efficiency.", ["Logistics", "Supply Chain"], "https://docs.google.com/spreadsheets/d/1PSHkNNTlfH7GcfZEdIVMKQSx0KVIvscBC4VyY1EMUhQ/edit?usp=drive_link"], ["Investigating Netflix Movies and Guest Stars in The Office", "Explore Netflix movie data and perform exploratory data analysis for a production company to uncover insights about movies from a particular decade.", ["Python", "Data Analysis"], "https://drive.google.com/file/d/1-IeauthFHar_q8x9bW6xXXazriOE3roi/view?usp=sharing"], ["Analyzing Demand Trends from 2016 to 2019 using Time Series Techniques (Excel)", "This project examines monthly demand data from 2016 to 2019 to identify patterns, trends, and potential factors influencing demand fluctuations. By analyzing the data, I aimed to gain insights into seasonal variations, growth rates, and outliers that could inform strategic decision-making.", ["Excel", "Time Series"], "https://docs.google.com/spreadsheets/d/1hiGq3shHhvWqTvmAIGufZW2BL2-U4mwNcbOPXHYkFqw/edit?usp=sharing"], ["A Comparative Study of Time Series and AI Models for Predicting High Variance Retail Data", "The paper compares time series and AI models for retail sales forecasting. It finds that ANNs outperform time series models for high-variance data. Incorporating product stock and price information further enhances ANN prediction accuracy by 35%.", ["Machine Learning", "Research"], "https://drive.google.com/file/d/1ZzDZ_jCILlyX0aFcK20H8jxgoEO6QiPi/view?usp=drive_link"], ["Optimizing Production Capacity in a Pharmaceutical Manufacturing Facility", "This case study analyzes the production capacity of a pharmaceutical manufacturing facility to identify potential bottlenecks and areas for improvement. By examining the required number of cartons for each product type and set size, the analysis highlights the need for a more efficient allocation of resources to meet demand and reduce costs.", ["Operations", "Lean"], "https://docs.google.com/spreadsheets/d/12C5s4hCMZw83Mg2d4GDcDCOsbeTssDgN4lPskk1OBtg/edit?usp=drive_link"], ["LogiLess: Streamlining Logistics Operations", "LogiLess is a project aimed at reducing logistics delays within an organization. By developing a new operating system, the project seeks to optimize workflows, improve efficiency, and enhance overall supply chain performance.", ["Logistics", "Process Improvement"], "https://docs.google.com/document/d/1v9-2OQofBr7tvFcpG6w2fIBskMY5HmNQXiuZO0PVp_w/edit?usp=sharing"], ["Optimizing Production for Veiladati", "Develop a profitable production plan for Veiladati's Italian company in 2020, considering demand forecasting, production capacity, and raw material sourcing, including an annual production plan for product categories A and B, a detailed analysis of production capacity and demand alignment, a profitability statement demonstrating financial viability, and a presentation outlining the strategic approach and key findings.", ["Production Planning", "Forecasting"], "https://docs.google.com/presentation/d/1IN_3hqOGCdT7Oh4fyFL6pcNOjxZHHKtFnhcAVl9rIzM/edit?usp=drive_link"], ["Research Proposal for Master's Degree", "Sales forecasting is a cornerstone of retail management, influencing decisions at all levels. Given the vast product range and geographic distribution of most retailers, historical sales data often exhibit substantial variability. This variability can undermine confidence in traditional forecasting methods like time series analysis and Artificial Neural Networks. Consequently, identifying optimized techniques tailored to the unique challenges of retail sales forecasting is essential.", ["Machine Learning", "Research"], "https://docs.google.com/presentation/d/19mj-dhR3vRoNap24icqlbvNqa9acuw5OrMf3NHy0njM/edit?usp=sharing"], ["Test the Matching of Aggregating Data with Non-Aggregating Data", "The project aims to automate the process of extracting data from an FTP site, saving it to SharePoint and locally, performing a macro operation, and implementing logging and unit testing. It involves pulling .csv files, executing a macro, and generating new files. The script will be configured using YAML files and include unit tests to ensure its reliability.", ["Automation", "Python"], "https://drive.google.com/file/d/1xACgmqM4LCaxRVY6MtGlJ_pL3T8UxyH-/view?usp=sharing"]];
-document.getElementById("projs").innerHTML=projects.map(p=>`<div class="card cert"><b>${p[0]}</b><div class="chips" style="margin:0">${p[2].map(t=>`<span>${t}</span>`).join("")}</div><p style="margin:0;color:var(--mute);font-size:.93rem">${p[1]}</p><a href="${p[3]}" target="_blank" rel="noopener">View Project</a></div>`).join("");
-function route(){const h=(location.hash||'#home').slice(1);const id=document.getElementById(h)?h:'home';
-document.querySelectorAll('.page').forEach(p=>p.classList.toggle('on',p.id===id));
-document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+id));scrollTo(0,0)}
-addEventListener('hashchange',route);route();
-</script></body></html>
+(()=>{const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches,root=document.documentElement;
+$('#tog').onclick=()=>{const d=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;root.dataset.theme=d?'light':'dark'};
+addEventListener('pointermove',e=>{root.style.setProperty('--mx',e.clientX+'px');root.style.setProperty('--my',e.clientY+'px')});
+const words=['weekly reports','follow-ups','inventory counts','demand forecasts','data cleanup'];let w=0,c=0,del=false;const t=$('#type');
+function tick(){const s=words[w];if(rm){t.textContent=s;return}t.textContent=s.slice(0,c);if(!del&&c<s.length)c++;else if(!del){del=true;return setTimeout(tick,1400)}else if(c>0)c--;else{del=false;w=(w+1)%words.length}setTimeout(tick,del?35:70)}tick();
+$('#replay').onclick=()=>{const l=$$('.step,.step i');l.forEach(e=>e.style.animation='none');void document.body.offsetHeight;l.forEach(e=>e.style.animation='')};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);const el=e.target,n=parseInt(el.textContent),u=el.textContent.replace(/[0-9]/g,'');if(rm)return;const st=performance.now();(function f(now){const p=Math.min((now-st)/1100,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+u;if(p<1)requestAnimationFrame(f)})(st)}),{threshold:.6});
+$$('.stat b').forEach(b=>io.observe(b));
+$$('.filters button').forEach(b=>b.onclick=()=>{$$('.filters button').forEach(x=>x.classList.toggle('on',x===b));$$('.proj a.box').forEach(a=>{const ai=/Machine|Python|Power BI/.test(a.querySelector('.tag').textContent);a.style.display=(b.dataset.f==='all'||(b.dataset.f==='ai')===ai)?'':'none'})});
+const h=$('#hrs'),p=$('#pct');function calc(){$('#hv').textContent=h.value;$('#pv').textContent=p.value;const y=Math.round(h.value*p.value/100*48);$('#yr').textContent=y;$('#dy').textContent=Math.round(y/8)}h.oninput=p.oninput=calc;calc();
+})();
+</script>
+</body>
+</html>
