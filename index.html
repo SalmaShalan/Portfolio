@@ -104,12 +104,21 @@ h1 span.hl{display:inline;width:auto}
 .prod .meta{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .prod .meta span{background:var(--accsoft);padding:5px 12px;border-radius:999px;font-size:13.5px;font-weight:600}
 .prod .meta a{margin-left:auto;font-weight:700;background:var(--acc);color:var(--bg);text-decoration:none;padding:6px 16px;border-radius:999px;font-size:14.5px}
+.cfilters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.cfilters button{font:inherit;cursor:pointer;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 16px;font-size:15px}
+.cfilters button.on{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+.certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.cert{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.cert:hover,.cert:focus-visible{transform:translateY(-3px);border-color:var(--acc);box-shadow:0 10px 24px rgba(61,90,254,.16)}
+.cert b{font-size:16.5px;line-height:1.3;margin-bottom:6px}
+.cert small{color:var(--mute);font-size:14px}
+.cert .go{margin-top:auto;padding-top:12px;color:var(--acc);font-weight:600;font-size:14px}
 @media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px}.tl li{grid-template-columns:1fr;gap:4px}nav{flex-wrap:wrap;gap:6px 12px}nav div{gap:6px 12px;font-size:14px;flex-wrap:wrap}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav><b>Salma Shalan</b><div><a href="#ai">AI automation</a><a href="#products">Products</a><a href="#work">Work</a><a href="#path">Path</a><a href="#contact">Contact</a><button class="tog" id="tog" aria-label="Toggle light and dark theme">◐</button></div></nav><div class="glow"></div>
+<nav><b>Salma Shalan</b><div><a href="#ai">AI automation</a><a href="#products">Products</a><a href="#work">Work</a><a href="#path">Path</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a><button class="tog" id="tog" aria-label="Toggle light and dark theme">◐</button></div></nav><div class="glow"></div>
 
 <header class="hero">
 <div>
@@ -197,6 +206,31 @@ h1 span.hl{display:inline;width:auto}
 </ul>
 </section>
 
+<section id="certificates">
+<h2 class="t">Certificates</h2>
+<p class="sub">17 certificates in supply chain, Six Sigma, data and analytics. Each card opens the verified copy.</p>
+<div class="cfilters"><button class="on" data-g="all">All (17)</button><button data-g="sc">Supply chain (5)</button><button data-g="data">Data (11)</button><button data-g="mkt">Marketing (1)</button></div>
+<div class="certs">
+<a class="cert" data-g="sc" href="https://coursera.org/share/8ccbb958b5a6753e16f03b2c61cb8d38" target="_blank" rel="noopener"><b>Supply Chain Logistics</b><small>Rutgers University · Coursera</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="sc" href="https://coursera.org/share/dc30e84507b862f1f1915468e08f6760" target="_blank" rel="noopener"><b>Supply Chain Planning</b><small>Rutgers University · Coursera</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="sc" href="https://coursera.org/share/a6e9f9b2fc72bd9a74541472af18e294" target="_blank" rel="noopener"><b>Supply Chain Sourcing</b><small>Rutgers University · Coursera</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="sc" href="https://coursera.org/share/ec8fed8490c42ed3afa9e9f0606aa316" target="_blank" rel="noopener"><b>Supply Chain Operations</b><small>Rutgers University · Coursera</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="sc" href="https://coursera.org/share/4d6fbea106121a03d789cfc5996ee845" target="_blank" rel="noopener"><b>Team Management for the 6σ Black Belt</b><small>Kennesaw State University · Coursera</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/0f726bf5c1d8b577056b9d7dfd982d7e78f73a89" target="_blank" rel="noopener"><b>Data Communication Concepts</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/6f2077422ca0bd199f4ad6dd035450e9a285ccc4" target="_blank" rel="noopener"><b>PostgreSQL Summary Stats and Window Functions</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/d26e9ad5d8bf0b1c4f2987d0693315284918e9ca" target="_blank" rel="noopener"><b>Understanding Data Visualization</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/3d2bbb33a15bd9855b9f04f92e599875d345e5d9" target="_blank" rel="noopener"><b>Data Visualization in Power BI</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/4f267708adc4c1fa1079be520fb1190616dcc0d1" target="_blank" rel="noopener"><b>Joining Data with pandas</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/46062d74a2d0c419c09962b2c6e2b8c974b16e6b" target="_blank" rel="noopener"><b>Exploratory Data Analysis in Python</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/55a1ceaa25a58d37cd78bd93d9ce36762309f934" target="_blank" rel="noopener"><b>Data Manipulation in SQL</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/07822c9f3fa3e47e76d897fe6ecab6cea3c2cb79" target="_blank" rel="noopener"><b>Data Manipulation with pandas</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/fb8b66437433b617e5b964ed3cb80a8c3404c57c" target="_blank" rel="noopener"><b>Joining Data in SQL</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/2bfd1fb3e9fd1c217e0078919d24de7587dca6b8" target="_blank" rel="noopener"><b>Intermediate SQL</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="data" href="https://www.datacamp.com/completed/statement-of-accomplishment/course/ae92e7d46216fd3d52fd968f8af72c6202e42776" target="_blank" rel="noopener"><b>Intermediate Python</b><small>DataCamp</small><span class="go">View certificate</span></a>
+<a class="cert" data-g="mkt" href="https://www.credly.com/badges/7c5cdd86-ad5e-4cac-a852-4811fd9b897a" target="_blank" rel="noopener"><b>Google Digital Marketing and E-Commerce Professional Certificate</b><small>Google · Coursera</small><span class="go">View certificate</span></a>
+</div>
+</section>
+
 <section>
 <h2 class="t">Tools</h2>
 <div class="chips"><span>Power BI</span><span>Python</span><span>Copilot Studio</span><span>Claude Code</span><span>Bitrix24</span><span>ClickUp</span><span>Trello</span><span>Microsoft 365</span><span>Make</span><span>Google Workspace</span><span>Excel</span><span>Lean Six Sigma</span><span>Supply chain</span><span>Arabic and English</span></div>
@@ -225,6 +259,7 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return
 $$('.stat b').forEach(b=>io.observe(b));
 $$('.filters button').forEach(b=>b.onclick=()=>{$$('.filters button').forEach(x=>x.classList.toggle('on',x===b));$$('.proj a.box').forEach(a=>{const ai=/Machine|Python|Power BI/.test(a.querySelector('.tag').textContent);a.style.display=(b.dataset.f==='all'||(b.dataset.f==='ai')===ai)?'':'none'})});
 const h=$('#hrs'),p=$('#pct');function calc(){$('#hv').textContent=h.value;$('#pv').textContent=p.value;const y=Math.round(h.value*p.value/100*48);$('#yr').textContent=y;$('#dy').textContent=Math.round(y/8)}h.oninput=p.oninput=calc;calc();
+$$('.cfilters button').forEach(b=>b.onclick=()=>{$$('.cfilters button').forEach(x=>x.classList.toggle('on',x===b));$$('.cert').forEach(c=>{c.style.display=(b.dataset.g==='all'||c.dataset.g===b.dataset.g)?'':'none'})});
 })();
 </script>
 </body>
